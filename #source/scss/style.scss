@@ -1,8 +1,10 @@
 
-@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@500;600;700&display=swap');
+@import "_mixins";
 body {
-	font-family: Montserrat;
+	font-family: 'Montserrat', sans-serif;
 	font-weight: 400;
+	font-size: 14px;
 	margin: 0;
 	padding: 0;
 }
@@ -210,6 +212,82 @@ body {
 			}
 		}
 	}
+	}
+	.gallery__row {
+		width: 100%;
+		margin-top: 90px;
+		.gallery__column-big {
+			display: flex;
+			width: 100%;
+			.items-big.foto{
+				width: 50%;
+				box-sizing: border-box;
+				img {
+					width: 100%;
+					height: 100%;
+				}
+			}
+			.items-big.info{
+				flex: 0 0 auto;
+				box-sizing: border-box;
+				width: 50%;
+				@include adaptive-padding-bottom(80, 15);
+				@include adaptive-padding-top(80, 15);
+				@include adaptive-padding-left(80, 15);
+				@include adaptive-padding-right(80, 15);
+				background-color: #fff;
+				.items-big-titel {
+					max-width: 508px;
+					color: #000000;
+					@include adaptive-font(68, 20);
+					@include adaptive-line-height(80, 25);
+					@include adaptive-margin-top(30, 5);
+					@include adaptive-margin-bottom(80, 5);
+				}
+				.items-big-text {
+					max-width: 503px;
+					color: #878787;
+					@include adaptive-font(14, 12);
+					@include adaptive-line-height(30, 20);
+					@include adaptive-margin-bottom(70, 5);
+				}
+				.items-big-button {
+					display: flex;
+					justify-content: center;
+					align-items: center;
+					width: 151px;
+					height: 44px;
+					background-color: #2ebaee;
+					color: #ffffff;
+					border-radius: 35px;
+					cursor: pointer;
+					&:hover {
+						text-decoration: underline;
+					}
+				}
+			}
+			
+		}
+		@media(max-width: 948px) {
+			.gallery__column-big {
+				display: flex;
+				flex-direction: column;
+				.items-big.foto{
+					width: 100%;
+				}
+				.items-big.info{
+					flex: 0 0 auto;
+					width: 100%;
+					.items-big-titel {
+					}
+					.items-big-text {
+					}
+					.items-big-button {
+					}
+				}
+				
+			}
+		}
 
 	}
 }
