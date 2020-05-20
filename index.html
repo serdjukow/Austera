@@ -11,29 +11,33 @@
 	<link href="https://fonts.googleapis.com/css?family=Yanone+Kaffeesatz:300,400,700&amp;subset=cyrillic" rel="stylesheet">
 	</head>
 	<body>
-
+<header class="header">
+	<div class="header__top">
+		<div class="header__logo">
+			<a href="http://">
+				<img src="img/logo.webp" alt="">
+			</a>
+		</div>
+		<nav class="header__nav">
+			<div class="nav-bar">
+				<ul>
+					<li><a class="active" href="">Homepage</a></li>
+					<li><a href="">Services</a></li>
+					<li><a href="">About us</a></li>
+					<li><a href="">Contact Us</a></li>
+				</ul>
+			</div>
+			<div class="nav-search">
+				<img src="img/search_icon.webp" alt="">
+			</div>
+		</nav>
+	</div>	
+</header>
 <div class="wrapper">
-
-	<header class="header">
-		<div class="header-bg">
-			<div class="header__top">
-				<div class="header__logo">
-					<a href="http://">Austera</a>
-					<img src="img/elipsa_2.webp" alt="">
-				</div>
-				<nav class="header__nav">
-					<div class="nav-bar">
-						<ul>
-							<li><a class="active" href="">Homepage</a></li>
-							<li><a href="">Services</a></li>
-							<li><a href="">About us</a></li>
-							<li><a href="">Contact Us</a></li>
-						</ul>
-					</div>
-					<div class="nav-search">
-						<img src="img/search_icon.webp" alt="">
-					</div>
-				</nav>
+	<main class="page">
+		<div class="main-screen">
+			<div class="main-screen__bg ibg">
+				<img src="img/image.webp" alt="">
 			</div>
 			<div class="header__body">
 				<div class="header__body-titel">
@@ -47,105 +51,144 @@
 				</a>
 			</div>
 		</div>
-	</header>
-	<section class="services">
 		<div class="content">
-			<div class="services-titel">
-				Our services
-			</div>
-			<div class="services__row">
-				<div class="services__column">
-					<div class="services__column-img">
-						<img src="img/Responsive_design.webp" alt="">
+			<section class="services">
+				<div class="container">
+					<div class="services-titel">
+						<h1>Our services</h1>
 					</div>
-						<div class="services__column-title">
-							Responsive design
+					<div class="services__row">
+						<div class="services__column">
+							<div class="services__column-img">
+								<img src="img/Responsive_design.webp" alt="">
+							</div>
+								<div class="services__column-title">
+									Responsive design
+								</div>
+								<div class="services__column-text">
+									Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque molestie purus a felis condimentum molestie. 
+								</div>
 						</div>
-						<div class="services__column-text">
-							Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque molestie purus a felis condimentum molestie. 
+						<div class="services__column">
+							<div class="services__column-img">
+								<img src="img/Endless_Security.webp" alt="">
+							</div>
+								<div class="services__column-title">
+									Endless Security
+								</div>
+								<div class="services__column-text">
+									Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque molestie purus a felis condimentum molestie. 
+								</div>
 						</div>
-					
-				</div>
-				<div class="services__column">
-					<div class="services__column-img">
-						<img src="img/Endless_Security.webp" alt="">
-					</div>
-						<div class="services__column-title">
-							Endless Security
+						<div class="services__column">
+							<div class="services__column-img">
+								<img src="img/Incredible_features.webp" alt="">
+							</div>
+								<div class="services__column-title">
+									Incredible features
+								</div>
+								<div class="services__column-text">
+									Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque molestie purus a felis condimentum molestie. 
+								</div>
 						</div>
-						<div class="services__column-text">
-							Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque molestie purus a felis condimentum molestie. 
+						<div class="services__column">
+							<div class="services__column-img">
+								<img src="img/Fresh_ideas.webp" alt="">
+							</div>
+								<div class="services__column-title">
+									Fresh ideas
+								</div>
+								<div class="services__column-text">
+									Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque molestie purus a felis condimentum molestie. 
+								</div>
 						</div>
-					
-				</div>
-				<div class="services__column">
-					<div class="services__column-img">
-						<img src="img/Incredible_features.webp" alt="">
-					</div>
-						<div class="services__column-title">
-							Incredible features
-						</div>
-						<div class="services__column-text">
-							Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque molestie purus a felis condimentum molestie. 
-						</div>
-					
-				</div>
-				<div class="services__column">
-					<div class="services__column-img">
-						<img src="img/Fresh_ideas.webp" alt="">
-					</div>
-						<div class="services__column-title">
-							Fresh ideas
-						</div>
-						<div class="services__column-text">
-							Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque molestie purus a felis condimentum molestie. 
-						</div>
-					
-				</div>
-			</div>
-			<a href="" class="button button-services">
-				Check services
-			</a>
-			<div class="services__row-laptop">
-				<div class="laptop-column">
-				<div class="laptop__info">
-					<div class="laptop__info-title">
-						Lorem ipsum dolor sit amet
-					</div>
-					<div class="laptop__info-text">
-						Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque molestie purus a felis condimentum molestie. Etiam a ullamcorper odio. Phasellus ipsum lorem, finibus semper sollicitudin ac, varius ut velit. Maecenas hendrerit ac ligula eu ultrices. 
 					</div>
 					<a href="" class="button button-services">
-						Show more
+						Check services
 					</a>
-				</div>
-				<div class="laptop-foto">
-					<img src="img/laptop.png" alt="">
-				</div>
-				
-			</div>
-			<div class="laptop-column">
-				<div class="laptop-foto">
-					<img src="img/Intuos_Pro.png" alt="">
-				</div>
-				<div class="laptop__info">
-					<div class="laptop__info-title text-white">
-						Lorem ipsum dolor sit amet
+					<div class="services__row-laptop">
+						<div class="laptop-column column-1">
+						<div class="laptop__info">
+							<div class="laptop__info-title">
+								Lorem ipsum dolor sit
+							</div>
+							<div class="laptop__info-text">
+								Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque molestie purus a felis condimentum molestie. Etiam a ullamcorper odio. Phasellus ipsum lorem, finibus semper sollicitudin ac, varius ut velit. Maecenas hendrerit ac ligula eu ultrices. 
+							</div>
+							<a href="" class="button button-services">
+								Show more
+							</a>
+						</div>
+						<div class="laptop-foto">
+							<img src="img/laptop.png" alt="">
+						</div>
+						
 					</div>
-					<div class="laptop__info-text text-white">
-						Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque molestie purus a felis condimentum molestie. Etiam a ullamcorper odio. Phasellus ipsum lorem, finibus semper sollicitudin ac, varius ut velit. Maecenas hendrerit ac ligula eu ultrices. 
+					<div class="laptop-column column-2">
+						<div class="laptop-foto">
+							<img src="img/Intuos_Pro.png" alt="">
+						</div>
+						<div class="laptop__info">
+							<div class="laptop__info-title text-white">
+								Lorem ipsum dolor sit amet
+							</div>
+							<div class="laptop__info-text text-white">
+								Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque molestie purus a felis condimentum molestie. Etiam a ullamcorper odio. Phasellus ipsum lorem, finibus semper sollicitudin ac, varius ut velit. Maecenas hendrerit ac ligula eu ultrices.
+							</div>
+							<a href="" class="button button-services white">
+								Show more
+							</a>
+						</div>
 					</div>
-					<a href="" class="button button-services white">
-						Show more
-					</a>
 				</div>
-
-				
 			</div>
+				<div class="gallery__row">
+					<div class="gallery__column-big">
+						<div class="items-big foto">
+							<img src="img/services/board.png" alt="">
+						</div>
+						<div class="items-big info">
+							<div class="items-big-titel">
+								Lorem ipsum dolor sit amet.
+							</div>
+							<div class="items-big-text">
+								Lorem, ipsum dolor sit amet consectetur adipisicing elit. Velit libero culpa quis. Facere ad, velit accusamus reprehenderit animi adipisci quibusdam.
+								Quisque molestie purus a felis condimentum molestie. Etiam a ullamcorper odio. Phasellus ipsum lorem, finibus semper sollicitudin ac, varius ut velit. Maecenas hendrerit ac ligula eu ultrices. 
+							</div>
+							<a class="items-big-button">
+								Learn More
+							</a>
+						</div>
+					</div>
+					<div class="gallery__column-small">
+						<a class="items-small small-1">
+							<div class="items-small-mask">
+								<span>Lorem ipsum dolor sit amet</span>
+							</div>
+						</a>
+						<a class="items-small small-2">
+							<div class="items-small-mask">
+								<span>Nunc fringilla tortor urna</span>
+							</div>
+						</a>
+						<a class="items-small small-3">
+							<div class="items-small-mask">
+								<span>Nulla pulvinar pulvinar est</span>
+							</div>
+						</a>
+						<a class="items-small small-4">
+							<div class="items-small-mask">
+								<span>Fusce at diam condim</span>
+							</div>
+						</a>
+					</div>
+				</div>
+			
+			</section>
 		</div>
-		</div>
-
-	</section>
+	</main>
 </div>
+		<script src="js/main.js"></script>
+		<script src="js/script.js"></script>	
 	</body>
 </html>
