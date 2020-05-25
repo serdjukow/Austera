@@ -250,7 +250,7 @@ body { font-family: 'Montserrat', sans-serif; font-weight: 400; font-size: 14px;
   .check .check_container .team__row .team__column .team__column-direction { line-height: 40px; margin-bottom: 2%; }
   .check .check_container .team__row .team__column .team__column-button { width: 151px; height: 44px; } }
 
-.contact { display: block; background-image: url(img/bg_contact.png); background-position: center; background-size: cover; background-repeat: no-repeat; position: relative; width: 100%; }
+.contact { display: block; background-image: url(img/bg_contact.png); background-position: center; background-size: cover; background-repeat: no-repeat; position: relative; background-attachment: fixed; width: 100%; }
 
 .contact .contact-masc { background-color: rgba(0, 0, 0, 0.8); padding: 7% 0; }
 
@@ -258,17 +258,25 @@ body { font-family: 'Montserrat', sans-serif; font-weight: 400; font-size: 14px;
 
 .contact .contact-masc .contact__row .contact__column-info { -webkit-box-flex: 1; -ms-flex: 1 1 50%; flex: 1 1 50%; }
 
-.contact .contact-masc .contact__row .contact__column-info h1 { color: #ffffff; font-family: Montserrat; font-size: 72px; font-weight: 700; margin-bottom: 10%; }
+.contact .contact-masc .contact__row .contact__column-info h1 { color: #ffffff; font-weight: 700; margin-bottom: 10%; }
+
+@media (max-width: 767px) { .contact .contact-masc .contact__row .contact__column-info h1 { font-size: calc(30px + 71.4 * ((100vw - 320px) / 2000)); } }
+
+@media (min-width: 767px) { .contact .contact-masc .contact__row .contact__column-info h1 { font-size: calc(30px + 42 * (100vw / 2000)); } }
 
 .contact .contact-masc .contact__row .contact__column-info .adress { color: #878787; font-size: 18px; line-height: 30px; margin-bottom: 20px; }
 
 .contact .contact-masc .contact__row .contact__column-info .phone, .contact .contact-masc .contact__row .contact__column-info .mail { color: #878787; font-size: 30px; line-height: 48px; }
 
+@media (max-width: 767px) { .contact .contact-masc .contact__row .contact__column-info .phone, .contact .contact-masc .contact__row .contact__column-info .mail { font-size: calc(20px + 17 * ((100vw - 320px) / 2000)); } }
+
+@media (min-width: 767px) { .contact .contact-masc .contact__row .contact__column-info .phone, .contact .contact-masc .contact__row .contact__column-info .mail { font-size: calc(20px + 10 * (100vw / 2000)); } }
+
 .contact .contact-masc .contact__row .contact__column-info .phone span, .contact .contact-masc .contact__row .contact__column-info .mail span { color: #2ebaee; }
 
 .contact .contact-masc .contact__row .contact__column-info .social { display: -webkit-box; display: -ms-flexbox; display: flex; margin-top: 70px; margin-bottom: 70px; }
 
-.contact .contact-masc .contact__row .contact__column-info .social .social-icon { display: -webkit-box; display: -ms-flexbox; display: flex; -webkit-box-pack: center; -ms-flex-pack: center; justify-content: center; -webkit-box-align: center; -ms-flex-align: center; align-items: center; width: 55px; height: 55px; border-radius: 50%; margin: 0 17.5px; -webkit-transition: .2s; -o-transition: .2s; transition: .2s; }
+.contact .contact-masc .contact__row .contact__column-info .social .social-icon { display: -webkit-box; display: -ms-flexbox; display: flex; -webkit-box-pack: center; -ms-flex-pack: center; justify-content: center; -webkit-box-align: center; -ms-flex-align: center; align-items: center; width: 55px; height: 55px; border-radius: 50%; margin: 10px 17.5px; -webkit-transition: .2s; -o-transition: .2s; transition: .2s; }
 
 .contact .contact-masc .contact__row .contact__column-info .social .social-icon:last-child { margin-right: 0; }
 
@@ -290,7 +298,7 @@ body { font-family: 'Montserrat', sans-serif; font-weight: 400; font-size: 14px;
 
 .contact .contact-masc .contact__row .contact__column-mail { -webkit-box-flex: 1; -ms-flex: 1 1 50%; flex: 1 1 50%; /* FireFox 4-18 */ /* FireFox 19+ */ /* Internet Explorer 10+ */ }
 
-.contact .contact-masc .contact__row .contact__column-mail input { display: block; width: 100%; background-color: transparent; border-radius: 3px; border: 2px solid #535353; padding: 25px; margin-bottom: 25px; color: #fff; font-weight: 700; -webkit-transition: .2s; -o-transition: .2s; transition: .2s; }
+.contact .contact-masc .contact__row .contact__column-mail input { display: block; width: 100%; -webkit-box-sizing: border-box; box-sizing: border-box; background-color: transparent; border-radius: 3px; border: 2px solid #535353; padding: 25px; margin-bottom: 25px; color: #fff; font-weight: 700; -webkit-transition: .2s; -o-transition: .2s; transition: .2s; }
 
 .contact .contact-masc .contact__row .contact__column-mail input:focus::-webkit-input-placeholder { color: transparent; -webkit-transition: .3s; -o-transition: .3s; transition: .3s; }
 
@@ -302,7 +310,7 @@ body { font-family: 'Montserrat', sans-serif; font-weight: 400; font-size: 14px;
 
 .contact .contact-masc .contact__row .contact__column-mail input:focus:-ms-input-placeholder { color: transparent; -webkit-transition: .3s; -o-transition: .3s; transition: .3s; }
 
-.contact .contact-masc .contact__row .contact__column-mail .youre-message { display: block; padding: 25px 25px 200px 25px; width: 100%; background-color: transparent; border-radius: 3px; border: 2px solid #535353; margin-bottom: 25px; color: #fff; font-weight: 700; -webkit-transition: .3s; -o-transition: .3s; transition: .3s; }
+.contact .contact-masc .contact__row .contact__column-mail .youre-message { display: block; -webkit-box-sizing: border-box; box-sizing: border-box; padding: 25px 25px 200px 25px; width: 100%; background-color: transparent; border-radius: 3px; border: 2px solid #535353; margin-bottom: 25px; color: #fff; font-weight: 700; -webkit-transition: .3s; -o-transition: .3s; transition: .3s; }
 
 .contact .contact-masc .contact__row .contact__column-mail textarea:focus::-webkit-input-placeholder { color: transparent; }
 
@@ -315,6 +323,16 @@ body { font-family: 'Montserrat', sans-serif; font-weight: 400; font-size: 14px;
 .contact .contact-masc .contact__row .contact__column-mail .btn { display: -webkit-box; display: -ms-flexbox; display: flex; -webkit-box-pack: center; -ms-flex-pack: center; justify-content: center; -webkit-box-align: center; -ms-flex-align: center; align-items: center; margin: 0 auto; width: 151px; height: 44px; background-color: #2ebaee; border: #2ebaee; border-radius: 30px; color: #ffffff; font-weight: 700; cursor: pointer; -webkit-transition: .2s; -o-transition: .2s; transition: .2s; }
 
 .contact .contact-masc .contact__row .contact__column-mail .btn:hover { background-color: transparent; color: #2ebaee; -webkit-transition: .2s; -o-transition: .2s; transition: .2s; }
+
+@media (max-width: 958px) { .contact .contact-masc .contact__row { display: -webkit-box; display: -ms-flexbox; display: flex; -ms-flex-wrap: wrap; flex-wrap: wrap; }
+  .contact .contact-masc .contact__row .contact__column-info { -webkit-box-flex: 1; -ms-flex: 1 1 100%; flex: 1 1 100%; text-align: center; }
+  .contact .contact-masc .contact__row .contact__column-info h1 { font-weight: 700; margin-bottom: 10%; }
+  .contact .contact-masc .contact__row .contact__column-info .adress { line-height: 30px; margin-bottom: 20px; }
+  .contact .contact-masc .contact__row .contact__column-info .phone, .contact .contact-masc .contact__row .contact__column-info .mail { line-height: 48px; }
+  .contact .contact-masc .contact__row .contact__column-info .social { display: -webkit-box; display: -ms-flexbox; display: flex; -ms-flex-wrap: wrap; flex-wrap: wrap; -webkit-box-pack: center; -ms-flex-pack: center; justify-content: center; margin-top: 30px; margin-bottom: 30px; }
+  .contact .contact-masc .contact__row .contact__column-mail { -webkit-box-flex: 1; -ms-flex: 1 1 50%; flex: 1 1 50%; }
+  .contact .contact-masc .contact__row .contact__column-mail input { padding: 25px; margin-bottom: 25px; }
+  .contact .contact-masc .contact__row .contact__column-mail .youre-message { padding: 25px 25px 200px 25px; margin-bottom: 25px; font-weight: 700; } }
 
 .footer { background-color: #000; color: #fff; }
 

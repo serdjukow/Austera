@@ -505,6 +505,7 @@ body {
 	background-size: cover;
 	background-repeat: no-repeat;
 	position: relative;
+	background-attachment: fixed;
 	width: 100%;
 	.contact-masc {
 		background-color: rgba(0, 0, 0, 0.8);
@@ -515,8 +516,8 @@ body {
 				flex:1 1 50%;
 				h1 {
 					color: #ffffff;
-					font-family: Montserrat;
-					font-size: 72px;
+					@include adaptive-font(72, 30);
+					
 					font-weight: 700;
 					margin-bottom: 10%;
 				}
@@ -529,6 +530,7 @@ body {
 				.phone,
 				.mail  {
 					color: #878787;
+					@include adaptive-font(30, 20);
 					font-size: 30px;
 					line-height: 48px;
 					span {
@@ -546,7 +548,7 @@ body {
 						width: 55px;
 						height: 55px;
 						border-radius: 50%;
-						margin: 0 17.5px;
+						margin: 10px 17.5px;
 						transition: .2s;
 						&:last-child {
 							margin-right: 0;
@@ -584,6 +586,7 @@ body {
 				input {
 					display: block;
 					width: 100%;
+					box-sizing: border-box;
 					background-color: transparent;
 					border-radius: 3px;
 					border: 2px solid #535353;
@@ -600,6 +603,7 @@ body {
 				input:focus:-ms-input-placeholder      {color: transparent; transition: .3s;}
 				.youre-message {
 					display: block;
+					box-sizing: border-box;
 					padding:25px 25px 200px 25px;
 					width: 100%;
 					background-color: transparent;
@@ -632,6 +636,49 @@ body {
 						background-color:transparent;
 						color: #2ebaee;
 						transition: .2s;
+					}
+				}
+			}
+		}
+		@media(max-width: 958px) {
+			.contact__row {
+				display: flex;
+				flex-wrap: wrap;
+				.contact__column-info {
+					flex:1 1 100%;
+					text-align: center;
+					h1 {
+						font-weight: 700;
+						margin-bottom: 10%;
+					}
+					.adress {
+						line-height: 30px;
+						margin-bottom: 20px;
+					}
+					.phone,
+					.mail  {
+						line-height: 48px;
+					}
+					.social {
+						display: flex;
+						flex-wrap: wrap;
+						justify-content: center;
+						margin-top: 30px;
+						margin-bottom: 30px;
+					}
+
+				}
+				.contact__column-mail {
+					flex:1 1 50%;
+					input {
+						padding:25px;
+						margin-bottom: 25px;
+					}
+
+					.youre-message {
+						padding:25px 25px 200px 25px;
+						margin-bottom: 25px;
+						font-weight: 700;
 					}
 				}
 			}
